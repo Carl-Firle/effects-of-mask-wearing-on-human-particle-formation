@@ -1,5 +1,5 @@
-#All raw data
+# All raw data
 
-Here is all raw data stored.
+Here all raw data is stored.
 
 Protocol includes all events necessary for data validation.
