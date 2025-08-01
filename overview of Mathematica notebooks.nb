@@ -1,0 +1,179 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      6173,        171]
+NotebookOptionsPosition[      4746,        136]
+NotebookOutlinePosition[      5159,        152]
+CellTagsIndexPosition[      5116,        149]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["effects of mask wearing on human particle emission", "Subsubsection",
+ CellChangeTimes->{{3.9592649357403316`*^9, 
+  3.9592649433034687`*^9}},ExpressionUUID->"331207eb-d5f1-bf49-9d0a-\
+9cca03fe8c75"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"data", " ", 
+    RowBox[{"preparation", ":", " ", 
+     RowBox[{
+     "all", " ", "raw", " ", "data", " ", "are", " ", "prepared", " ", 
+      "according", " ", "to", " ", "protocol", " ", "and", " ", "exported", " ",
+       "in", " ", "a", " ", "single", " ", "evaluation", " ", "file"}]}]}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+   "NotebookOpen", 
+    "[", "\"\<https://raw.githubusercontent.com/Carl-Firle/effects-of-mask-\
+wearing-on-human-particle-formation/refs/heads/main/methods/data_preparation.\
+nb\>\"", "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{
+  3.959266077825617*^9, {3.9592669903024883`*^9, 3.9592670279981174`*^9}, 
+   3.9592675703481617`*^9, {3.9630630418158703`*^9, 3.963063089981367*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"5f15dce5-526c-114b-b1ca-0e83598b26ed"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.9592671920501823`*^9, 3.95926726810837*^9, 
+  3.959267387397482*^9, 3.959267596931015*^9, 3.963063349638609*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"b8643bb8-0cc4-3e4f-a3ec-8e57e0aa84e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NotebookOpen", 
+  "[", "\"\<https://raw.githubusercontent.com/Carl-Firle/effects-of-mask-\
+wearing-on-human-particle-formation/refs/heads/main/methods/3d_laboratory_\
+cabin_experimental_setup.nb\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.9630632897605915`*^9, 3.9630632944675465`*^9}, {
+  3.9630633430497837`*^9, 3.9630633438902893`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"8a42c9fe-d6e1-e54d-961b-b577ade9af4a"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.9630631486060143`*^9, 3.963063179053566*^9, 
+  3.9630632963041477`*^9, 3.963063346488367*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"0a9a06cb-9ba2-c94d-b563-0b38b7bb8228"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["new document", "Subsubsection",
+ CellChangeTimes->{{3.9592649178146744`*^9, 
+  3.9592649204204617`*^9}},ExpressionUUID->"f440c1d6-d4e9-1148-a90a-\
+dd81d65efd00"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GenerateDocument", "[", 
+   RowBox[{
+   "CloudObject", 
+    "[", "\"\<https://www.wolframcloud.com/obj/firlecarl/myTemplate.nb\>\"", 
+    "]"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.9552768714816456`*^9, 3.9552768714816456`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"78eb6d52-6ae6-9643-8149-6fbc18c85d57"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["myPackage", "Subsubsection",
+ CellChangeTimes->{{3.959264925205183*^9, 
+  3.9592649284841022`*^9}},ExpressionUUID->"b11f4cee-5168-a941-8f07-\
+2fb0c534026f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NotebookOpen", "[", 
+   RowBox[{
+   "CloudObject", 
+    "[", "\"\<https://www.wolframcloud.com/obj/firlecarl/myPackage\>\"", 
+    "]"}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{
+  3.959264930419424*^9, {3.959265016603054*^9, 3.9592650346478252`*^9}, {
+   3.959265074457409*^9, 3.959265111289852*^9}, {3.9592651724430428`*^9, 
+   3.959265177822588*^9}},
+ CellLabel->
+  "In[359]:=",ExpressionUUID->"06ef0f0d-b2b3-2649-b156-5516189c9d37"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "b1b59bf6-f60e-e544-b21c-b325b8dc2d45", 
+     "bfd4fa1e-fec4-b14d-8580-92f96e05612b"], "label" -> "\"myPackage\"", 
+   "tooltip" -> InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+       TemplateBox[{
+        "\"https://www.wolframcloud.com/obj/firlecarl/myPackage\"", 
+         "https://www.wolframcloud.com/obj/firlecarl/myPackage"}, 
+        "HyperlinkURL"], "]"}], 
+     CloudObject["https://www.wolframcloud.com/obj/firlecarl/myPackage"], 
+     SelectWithContents -> True]|>,
+  "NotebookObjectUUIDs"]], "Output",
+ CellChangeTimes->{3.95926511252145*^9, 3.959265180741823*^9, 
+  3.959266227689438*^9, 3.9592663923705635`*^9},
+ CellLabel->
+  "Out[359]=",ExpressionUUID->"3b1c1e1a-373a-6648-bcac-2275a3f1f92b"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{492.75, 624.75},
+WindowMargins->{{Automatic, 130.5}, {6.75, Automatic}},
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (December 26, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"03428e70-e375-c048-a033-953c78f9c909"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 205, 3, 68, "Subsubsection",ExpressionUUID->"331207eb-d5f1-bf49-9d0a-9cca03fe8c75"],
+Cell[CellGroupData[{
+Cell[806, 29, 884, 19, 199, "Input",ExpressionUUID->"5f15dce5-526c-114b-b1ca-0e83598b26ed"],
+Cell[1693, 50, 247, 3, 32, "Output",ExpressionUUID->"b8643bb8-0cc4-3e4f-a3ec-8e57e0aa84e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1977, 58, 443, 7, 104, "Input",ExpressionUUID->"8a42c9fe-d6e1-e54d-961b-b577ade9af4a"],
+Cell[2423, 67, 228, 3, 32, "Output",ExpressionUUID->"0a9a06cb-9ba2-c94d-b563-0b38b7bb8228"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2700, 76, 167, 3, 43, "Subsubsection",ExpressionUUID->"f440c1d6-d4e9-1148-a90a-dd81d65efd00"],
+Cell[2870, 81, 352, 8, 85, "Input",ExpressionUUID->"78eb6d52-6ae6-9643-8149-6fbc18c85d57"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3259, 94, 162, 3, 43, "Subsubsection",ExpressionUUID->"b11f4cee-5168-a941-8f07-2fb0c534026f"],
+Cell[CellGroupData[{
+Cell[3446, 101, 491, 12, 104, "Input",ExpressionUUID->"06ef0f0d-b2b3-2649-b156-5516189c9d37"],
+Cell[3940, 115, 778, 17, 45, "Output",ExpressionUUID->"3b1c1e1a-373a-6648-bcac-2275a3f1f92b"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
